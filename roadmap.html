@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dynamic Roadmap Template</title>
+<link rel="stylesheet" href="roadmap.css">
+</head>
+<body>
+<header>
+
+    <form action="roadmap" method="post">
+    <h1 id="roadmap-title">Roadmap Title <input type="text" name="title" placeholder="enter the roadmap-title"></h1>
+</form>
+    <h2>Roadmap-image</h2>
+    <input type="file" id="image-input">
+    
+    
+</header>
+<section id="information">
+    <h2>Information</h2>
+    <div id="info-content">
+        <h3 id="info-title">Information Title</h3><input type="text" id="i-title" placeholder="enter the title">
+        <p id="info-description"><h3>description</h3><div class="descriptionbox"><input type="text" id="i-description" placeholder="enter description"  style="width: 800px; height: 300px;"></div></p>
+    </div>
+    <button id="add-information">Add Information</button>
+</section>
+
+<section id="job-posts">
+    <h2>Job Posts</h2>
+    <div id="post-content">
+        <ul id="job-list">
+            <li>Job Title: <input type="text" id="j-title" placeholder="enter title"></li>
+         <li>Job role: <input type="text" id="j-role" placeholder="enter title"></li>
+         <li>Average Salary:<input type="text" id="j-sallary" placeholder="enter title"> </li>
+        </ul>
+    </div>
+    
+    <button id="add-posts">Add post</button>
+
+  
+</section>
+
+<section id="step-by-step">
+    <h2>Step-by-Step Guide</h2>
+    <div id="steps-container">
+        <!-- Steps will be dynamically added here -->
+    </div>
+    <button id="add-step">Add Step</button>
+</section>
+<section id="other">
+    <h2>Other</h2>
+    <div id="other-content">
+        <!-- Content will be dynamically added here -->
+    </div>
+    <button id="add-content">Add Content</button>
+</section>
+<div class="button-container">
+    <button id="submit">submit</button>
+</div>
+   
+<script src="roadmap.js">
+</script>
+</body>
+</html>
