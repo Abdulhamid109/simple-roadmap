@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "edge": "^7.10.1",
+    "express": "^4.19.2",
+    "hbs": "^4.2.0",
+    "mongoose": "^8.3.0",
+    "nodemon": "^3.1.0"
+  }
+}

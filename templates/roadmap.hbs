@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dynamic Roadmap Template</title>
+<link rel="stylesheet" href="../public/roadmap.css">
+</head>
+<style>
+    /* Reset default browser styles */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+#roadmap-title {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+input[type="text"] {
+  padding: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: start;
+  
+}
+
+
+button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background-color: #555;
+}
+.button-container{
+    margin-top: 20px;
+  
+}
+#step-by-step {
+  margin-top: 20px;
+}
+
+#steps-container {
+  margin-bottom: 10px;
+}
+
+.descriptionbox {
+  margin-bottom: 10px;
+}
+
+input:hover{
+  background-color: #555;
+  color: white;
+}
+
+  
+
+/* Responsive layout */
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header {
+    width: 100%;
+    text-align: center;
+  }
+  
+section {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-top: 20px;
+
+  
+}
+}
+</style>
+<body>
+<header>
+
+    <form action="/roadmap" method="post">
+    <h1 id="roadmap-title">Roadmap Title <input type="text" name="road_title" placeholder="enter the roadmap-title"></h1>
+
+    <h2>Roadmap-image</h2>
+    <input type="file" id="image-input">
+    
+    
+</header>
+<section id="information">
+    <h2>Information</h2>
+    <div id="info-content">
+        <h3 id="info-title">Information Title</h3><input type="text" name="info_title" id="i-title" placeholder="enter the title">
+        <p id="info-description"><h3>description</h3><div class="descriptionbox"><input type="text" name="info_description" id="i-description" placeholder="enter description"  style="width: 800px; height: 300px;"></div></p>
+    </div>
+    <button id="add-information">Add Information</button>
+</section>
+
+<section id="job-posts">
+    <h2>Job Posts</h2>
+    <div id="post-content">
+        <ul id="job-list">
+            <li>Job Title: <input type="text" name="job_title" id="j-title" placeholder="enter title"></li>
+         <li>Job role: <input type="text" name="job_role" id="j-role" placeholder="enter title"></li>
+         <li>Average Salary:<input type="text" name="avg_salary" id="j-sallary" placeholder="enter title"> </li>
+        </ul>
+    </div>
+    
+    <button id="add-posts">Add post</button>
+
+  
+</section>
+
+<section id="step-by-step">
+    <h2>Step-by-Step Guide</h2>
+    <div id="steps-container">
+        <!-- Steps will be dynamically added here -->
+    </div>
+    <button id="add-step">Add Step</button>
+</section>
+<section id="other">
+    <h2>Other</h2>
+    <div id="other-content">
+        <!-- Content will be dynamically added here -->
+    </div>
+    <button id="add-content">Add Content</button>
+</section>
+<div class="button-container">
+    <input type="submit" id="submit">
+</div>
+   </form>
+{{!-- <script src="../public/roadmap.js"></script> --}}
+</body>
+</html>

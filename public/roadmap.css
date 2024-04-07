@@ -1,0 +1,96 @@
+/* Reset default browser styles */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+#roadmap-title {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+input[type="text"] {
+  padding: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: start;
+  
+}
+
+
+button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background-color: #555;
+}
+.button-container{
+    margin-top: 20px;
+  
+}
+#step-by-step {
+  margin-top: 20px;
+}
+
+#steps-container {
+  margin-bottom: 10px;
+}
+
+.descriptionbox {
+  margin-bottom: 10px;
+}
+
+input:hover{
+  background-color: #555;
+  color: white;
+}
+
+  
+
+/* Responsive layout */
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header {
+    width: 100%;
+    text-align: center;
+  }
+  
+section {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-top: 20px;
+
+  
+}
+}

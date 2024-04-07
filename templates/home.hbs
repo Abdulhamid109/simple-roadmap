@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Data from MongoDB</h1>
+    <ul>
+        {{#each dataFromDB}}
+            <li>Road Title: {{this.road_title}}, Info Title: {{this.info_title}}, Info Description: {{this.info_description}}, Job Title: {{this.job_title}}, Job Role: {{this.job_role}}, Average Salary: {{this.avg_salary}}</li>
+        {{/each}}
+    </ul>
+</body>
+</html>
